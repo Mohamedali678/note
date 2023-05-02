@@ -1,0 +1,38 @@
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    padding: 20px 40%;
+
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-evenly;
+}
+
+.box1 {
+    margin-top: 20px;
+    background-color: lightblue;
+    height: 200px;
+    width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
+.action {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
