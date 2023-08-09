@@ -1,7 +1,9 @@
 import { React, useEffect, useState } from "react";
 import Header from "./Header";
 import {AiTwotoneDelete} from "react-icons/ai";
+import {AiFillEdit} from "react-icons/ai"
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 
@@ -54,6 +56,8 @@ function Main(){
                 <p>{new Date(index.createdAt).toDateString()}</p>
 
                 <button onClick={() => deleteNote(index._id)} className="btn"><AiTwotoneDelete/></button>
+                <Link to={"/update/" + index._id} className="btn"> <AiFillEdit /> </Link>
+
                 </div>
             </div>
 
